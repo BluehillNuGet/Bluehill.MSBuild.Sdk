@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.Build.NoTargets">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageType>MSBuildSdk</PackageType>
+    <SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
+    <Description>Bluehill specific MSBuild project SDK</Description>
+    <PackageTags>msbuild;bluehill</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/BluehillNuGet/Bluehill.MSBuild.Sdk</RepositoryUrl>
+    <AssemblyVersion>1</AssemblyVersion>
+    <FileVersion>1.0.0</FileVersion>
+    <Version>1.0</Version>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="Sdk\**" Pack="true" PackagePath="Sdk" />
+    <None Include="..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+</Project>

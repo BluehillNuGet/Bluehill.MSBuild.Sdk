@@ -1,0 +1,23 @@
+<Project>
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <WarningsAsErrors>Nullable</WarningsAsErrors>
+    <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+    <Authors>na1307</Authors>
+    <Company>Bluehill</Company>
+    <Copyright>Copyright © Bluehill 2026</Copyright>
+    <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+    <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+    <EnableNETAnalyzers>True</EnableNETAnalyzers>
+    <AnalysisLevel>latest</AnalysisLevel>
+    <BluehillAnalyzersVersion>1.9.2</BluehillAnalyzersVersion>
+    <RoslynatorAnalyzersVersion>4.15.0</RoslynatorAnalyzersVersion>
+    <SonarAnalyzerVersion>10.25.0.139117</SonarAnalyzerVersion>
+    <StyleCopAnalyzersVersion>1.2.0-beta.556</StyleCopAnalyzersVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
+    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+  </PropertyGroup>
+</Project>
